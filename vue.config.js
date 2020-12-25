@@ -1,13 +1,10 @@
 const path = require("path");
-const designer = 'http://10.10.50.194:20087/';
-const datavisual_app = 'http://10.10.99.47:9551/';
-const metadata = 'http://10.10.50.219/';
-const api = "http://10.10.50.92:10000";
+const baseUrl = 'https://mockapi.eolinker.com/kYDm3Nrd186f34d638fe9055814a63b69976c35fd5d6a31'
+const designer = baseUrl;
+const datavisual_app = baseUrl;
+const metadata = baseUrl;
+const api = baseUrl;
 
-// const designer = 'http://10.10.50.104:10000/';
-// const datavisual_app = 'http://10.10.50.104:10000/';
-// const metadata = 'http://10.10.50.104:10000/';
-// const api = "http://10.10.50.104:10000";
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? `${process.env.VUE_APP_BUILD_DIR}/static` : "/",
     devServer: {
