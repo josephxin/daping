@@ -83,8 +83,8 @@ const routers = [{
     }
 ];
 const routerConfig = {
-    mode: "history",
-    base: process.env.VUE_APP_BUILD_DIR,
+    mode: "hash",
+    //base: process.env.VUE_APP_BUILD_DIR,
     routes: routers
 };
 const router = new Router(routerConfig);
