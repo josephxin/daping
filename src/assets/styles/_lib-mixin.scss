@@ -1,0 +1,80 @@
+@import "./lib-variable";
+@mixin flex($justify: flex-start, $align-items: center, $dir: row, $wrap: nowrap, $align-content: stretch) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $justify;
+    align-items: $align-items;
+    align-content: $align-content;
+}
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-wrap() {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+@mixin ver($font-size: 16px, $direction: middle) {
+    display: inline-block;
+    vertical-align: $direction;
+    font-size: $font-size;
+}
+
+@mixin linear($color1: #000, $color2: #fff, $angle: 180deg) {
+    background: ($color1 + $color2)/2;
+    background: linear-gradient($angle, $color1, $color2);
+}
+
+@mixin animate($type: all, $sec: 0.2s, $animation: ease-in) {
+    transition: $type $sec $animation;
+}
+
+@mixin no-wrap($text: ellipsis) {
+    text-overflow: $text;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@mixin text-shadow() {
+    text-shadow: 0 0 5px #fff, 0 0 10px #0245b6, 0 0 15px #0245b6, 0 0 40px #0245b6;
+}
+
+@mixin juzhong($condition: else) {
+    @if $condition==vertical {
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+    } @else if $condition==horizontal {
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+    } @else {
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+}
+
+@mixin background-image-conf() {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}

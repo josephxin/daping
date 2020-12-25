@@ -1,0 +1,154 @@
+.fadeIn-enter-active,
+.fadeIn-leave-active {
+    transition: all 1s ease;
+}
+
+.fadeIn-enter-active,
+.fadeIn-leave {
+    opacity: 1;
+}
+
+.fadeIn-enter,
+.fadeIn-leave-active {
+    opacity: 0;
+}
+
+.my-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    box-shadow: 1px 6px 7px -4px rgba(100, 100, 100, 0.7) !important;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+}
+
+.gallery.add {
+    // background-image: linear-gradient(-90deg,rgba(0,222,255,.39) 0,rgba(0,174,255,.19) 100%);
+    // box-shadow: 0 0 10px 0 rgba(55,224,255,.3);
+    cursor: pointer;
+
+    &:hover {
+        //     background-image: linear-gradient(-90deg,rgba(0,222,255,.6) 0,rgba(0,174,255,.19) 100%);
+        // box-shadow: 0 0 20px 0 rgba(55,224,255,.3);
+    }
+
+    .el-card__body {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        height: 100%;
+        padding: 0px !important;
+        font-size: 14px;
+    }
+
+    .borderIco {
+        border-radius: 50%;
+        border: 1px solid rgb(85, 155, 255);
+        padding: 3px;
+        width: 31px;
+        text-align: center;
+    }
+
+    .icon-xinjian::before {
+        font-size: 28px;
+        width: 31px;
+        color: rgb(85, 155, 255);
+    }
+
+    .mkaddBox {
+        margin: 15px;
+        height: 100%;
+        border: 2px dotted #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(85, 155, 255);
+    }
+}
+
+.pbox {
+    //cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    span.pname {
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 70%;
+        color: rgb(85, 155, 255);
+        text-align: left;
+    }
+
+    a {
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(85, 155, 255);
+
+        i {
+            margin-right: 5px;
+        }
+
+        i::before {
+            font-size: 14px;
+        }
+    }
+}
+
+.editbox {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+
+    > img {
+        transition: all 2s ease-in;
+        min-width: 100%;
+        display: block;
+        min-height: 160px;
+    }
+
+    .pedit {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.61);
+        .pedit-p {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        >button {
+            background: rgb(85, 155, 255);
+            color: #fff;
+            border-radius: 1px;
+            cursor: pointer;
+            border: none;
+        }
+        >i.icon-shanchu {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            color: rgb(85, 155, 255);
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        .pedit {
+            display: flex;
+        }
+    }
+}

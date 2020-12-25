@@ -1,0 +1,26 @@
+$linkColor =  teal
+*
+  margin 0
+  padding 0
+.links
+  color: $linkColor
+  text-decoration: none
+  &:hover
+    text-decoration :underline
+    
+$themeColor = #049afd
+$minwidth = 1200px
+$baseFontSize = 14px
+statusColor(str)
+  if (str == 'status-start')
+    color #fe4d55
+  else if (str == 'status-doing')
+    color blue
+  else
+    color #52cb7a
+ellipsis()
+  overflow hidden
+  white-space nowrap
+  text-overflow ellipsis
+/deep/.card-icon
+  color #a3d0f9

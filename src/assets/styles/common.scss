@@ -1,0 +1,120 @@
+@import "@/assets/styles/_lib-mixin.scss";
+
+.group-wrapper {
+    .group-title {
+        height: 28px;
+        position: relative;
+        .text {
+            cursor: pointer;
+            padding-left: 16px;
+            line-height: 28px;
+            &::before {
+                content: " ";
+                background-image: url(./assets/image/open.png);
+                background-size: 100% 100%;
+                position: absolute;
+                top: 12px;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                margin: 4px;
+            }
+            &.close::before {
+                background-image: url(./assets/image/close.png);
+            }
+        }
+        .show-btn {
+            float: right;
+            height: 20px;
+            margin: 4px 10px;
+            display: flex;
+            align-items: center;
+            .after-text {
+                margin-left: 5px;
+                line-height: 1;
+            }
+        }
+    }
+    .group-item {
+        margin-left: 10px;
+    }
+}
+
+.indicator-wrapper {
+    .el-carousel__indicators {
+        &.el-carousel__indicators--vertical {
+            left: auto;
+            right: 0 !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+        }
+        .el-carousel__indicator {
+            .el-carousel__button {
+                padding: 0;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background-color: rgba(1, 77, 73, 1);
+                color: #07afae;
+            }
+        }
+    }
+    .el-carousel__arrow {
+        box-shadow: 0 0 5px #fff;
+    }
+}
+
+.my-date-picker.el-date-editor {
+    .el-input__inner {
+        height: 100%;
+        line-height: initial;
+        /* cursor: pointer; */
+    }
+    .el-input__icon {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .el-input__suffix {
+        .el-input__icon {
+            cursor: pointer;
+        }
+    }
+    .el-range-input {
+        /* cursor: pointer; */
+    }
+    .el-range-separator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.my-picker-panel.el-picker-panel {
+    .el-picker-panel__icon-btn {
+        margin-top: 15px;
+        transform: translateY(-50%);
+    }
+    .el-picker-panel__footer {
+        background-color: transparent;
+    }
+    .el-date-table td.selected div {
+        background-color: transparent;
+    }
+
+    .el-date-table td.end-date span,
+    .el-date-table td.start-date span {
+        background-color: transparent;
+    }
+}
+
+.my-picker-panel.el-popper {
+    .popper__arrow {
+        &::after {
+            border-bottom-color: transparent !important;
+        }
+    }
+}
+

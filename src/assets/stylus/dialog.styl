@@ -1,0 +1,65 @@
+.common-dialog
+  .el-dialog
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 !important;
+    position: absolute;
+    border-radius: 5px !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  .el-dialog__header
+    border-bottom: 2px solid #5abdff !important;
+    padding: 10px 20px 10px 15px !important;
+    .el-dialog__title
+      font-family: 'Microsoft YaHei';
+      font-size: 14px;
+      color: #37414c;
+      font-weight: bold;
+      margin: 5px;
+      display flex
+      align-items center
+      img
+        margin-right 5px
+  .el-dialog__body
+    padding 20px
+    .el-form-item__label
+      color #37414c
+  .el-select-dropdown__item.selected
+    color: #74abff;
+    font-weight: bold;
+.primary-button
+  color: #fff !important
+  background-image: linear-gradient(0deg, #2273c9 0%, #2f7fd7 100%), linear-gradient(#58cdab, #58cdab) !important
+  background-blend-mode: normal, normal !important
+  box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.64) !important
+  border-radius: 2px !important
+  border: solid 1px #468cdc !important
+.primary-button:hover
+  color: #fff !important
+  background-image: linear-gradient(0deg, #2273c9 0%, #468cdc 100%), linear-gradient(#58cdab, #58cdab) !important
+  background-blend-mode: normal, normal !important
+  box-shadow: inset 0px 1px 4px 0px rgba(255, 255, 255, 0.64) !important
+  border-radius: 2px !important
+  border: solid 1px #468cdc !important
+.info-button
+  color: #fff !important
+  background-image: linear-gradient(0deg, #808ca6 0%, #9ca7bd 100%), linear-gradient(#58cdab, #58cdab) !important
+  background-blend-mode: normal, normal !important
+  box-shadow: inset 0px 1px 3px 0px rgba(255, 255, 255, 0.64) !important
+  border-radius: 2px !important
+  border: solid 1px #939cae !important
+  font-family: 'Microsoft YaHei'
+.info-button:hover
+  color: #fff !important
+  background-image: linear-gradient(0deg, #808ca6 0%, #939cae 100%), linear-gradient(#58cdab, #58cdab) !important
+  background-blend-mode: normal, normal !important
+  box-shadow: inset 0px 1px 3px 0px rgba(255, 255, 255, 0.64) !important
+  border-radius: 2px !important
+  border: solid 1px #939cae !important
