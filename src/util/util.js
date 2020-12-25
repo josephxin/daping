@@ -72,19 +72,19 @@ export default {
     },
 
     appServerURL: function() {
-        return `${process.env.VUE_APP_BUILD_DIR}/designer/`
+        return `${process.env.VUE_APP_BASE_URL}${process.env.VUE_APP_BUILD_DIR}/designer/`
     },
     disapiURL: function() {
-        return `${process.env.VUE_APP_BUILD_DIR}/disapi/`
+        return `${process.env.VUE_APP_BASE_URL}${process.env.VUE_APP_BUILD_DIR}/disapi/`
     },
     apiURL: function() {
-        return `${process.env.VUE_APP_BUILD_DIR}/api/`
+        return `${process.env.VUE_APP_BASE_URL}${process.env.VUE_APP_BUILD_DIR}/api/`
     },
     metadataURL: function() {
-        return `${process.env.VUE_APP_BUILD_DIR}/metadata-manage/`
+        return `${process.env.VUE_APP_BASE_URL}${process.env.VUE_APP_BUILD_DIR}/metadata-manage/`
     },
     getServelURL: function() {
-        return `${process.env.VUE_APP_BUILD_DIR}/datavisual_app/`
+        return `${process.env.VUE_APP_BASE_URL}${process.env.VUE_APP_BUILD_DIR}/datavisual_app/`
     },
 
     isNum: function(value) {

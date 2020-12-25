@@ -8,7 +8,7 @@
         "serve": "vue-cli-service serve --mode development",
         "dev": "npm run serve",
         "start": "npm run serve",
-        "build": "vue-cli-service build --mode production && node util/buildResource.js",
+        "build": "vue-cli-service build --mode production",
         "lint": "vue-cli-service lint",
         "test": "cross-env NODE_ENV=test karma start --single-run"
     },
