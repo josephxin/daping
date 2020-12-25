@@ -84,7 +84,7 @@ const routers = [{
 ];
 const routerConfig = {
     mode: "hash",
-    //base: process.env.VUE_APP_BUILD_DIR,
+    base: '/daping',
     routes: routers
 };
 const router = new Router(routerConfig);
