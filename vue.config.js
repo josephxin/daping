@@ -3,7 +3,7 @@ const designer = 'http://10.10.50.194:20087/';
 const datavisual_app = 'http://10.10.99.47:9551/';
 const metadata = 'http://10.10.50.219/';
 const api = "http://10.10.50.92:10000";
-
+console.log(111);
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ? `${process.env.VUE_APP_BUILD_DIR}static` : "/",
     //部署后代理没用了
